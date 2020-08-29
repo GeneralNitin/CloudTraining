@@ -1,0 +1,11 @@
+---
+applications:
+- name: CloudTraining-i514807
+  memory: 512MB
+  disk_quota: 512MB
+  buildpacks: 
+    - python_buildpack
+  command: python app.py
+  # Command to create hana DB: cf cs hanatrial schema db2 (It might take some time to setup)
+  services:
+    - CloudTraining
